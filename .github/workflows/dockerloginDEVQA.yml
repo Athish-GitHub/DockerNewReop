@@ -22,9 +22,9 @@ jobs:
     - name: Docker Pull
       run: docker pull hello-world
     - name: Docker Tag
-      run: docker tag hello-world athishcr/gitdemo
+      run: docker tag hello-world athishcr/gitdemo:V1
     - name: Docker Push
-      run: docker push athishcr/gitdemo
+      run: docker push athishcr/gitdemo:V1
   LogintodockerhubQA:
     runs-on: ubuntu-latest
     environment: QA
