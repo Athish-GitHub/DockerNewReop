@@ -22,9 +22,9 @@ jobs:
     - name: Docker Pull
       run: docker pull hello-world
     - name: Docker Tag
-      run: docker tag hello-world anudeepdock0908/anudeep-docker-repo/hello-world
+      run: docker tag hello-world athishcr/gitdemo
     - name: Docker Push
-      run: docker push anudeepdock0908/anudeep-docker-repo/hello-world
+      run: docker push athishcr/gitdemo
   LogintodockerhubQA:
     runs-on: ubuntu-latest
     environment: QA
